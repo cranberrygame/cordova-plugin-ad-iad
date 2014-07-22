@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.cranberrygame.phonegap.plugin.ad.iad.overlay"
+    version="1.0.1">
+	
+    <name>iAd</name>
+    <description>iAd</description>
+    <license>Apache 2.0</license>
+    <keywords>iad</keywords>
+    <repo>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.ad.iad.overlay</repo>
+ 	
+	<!-- window.iad.xxx(); -->
+	<!-- iad.xxx(); -->	
+    <js-module src="www/iad.js" name="iad">
+        <clobbers target="window.iad" />
+    </js-module>
+
+	<!-- ios -->
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="iAd">
+				<param name="ios-package" value="iAd" />
+			</feature>
+		</config-file>
+		
+		<header-file src="src/ios/iAd.h" />
+		<source-file src="src/ios/iAd.m" />
+		
+		<framework src="AdSupport.framework" />
+		<framework src="iAd.framework" />
+	</platform>
+
+</plugin>
