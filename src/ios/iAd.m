@@ -18,9 +18,6 @@
 - (CDVPlugin *)initWithWebView:(UIWebView *)theWebView {
     self = (iAd *)[super initWithWebView:theWebView];
     if (self) {
-        // These notifications are required for re-placing the ad on orientation
-        // changes. Start listening for notifications here since we need to
-        // translate the Smart Banner constants according to the orientation.
         [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
         [[NSNotificationCenter defaultCenter]
          addObserver:self
