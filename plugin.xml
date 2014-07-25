@@ -6,8 +6,8 @@
 	
     <name>iAd</name>
     <description>iAd</description>
-    <license>Apache 2.0</license>
-    <keywords>iad</keywords>
+    <license>MIT</license>
+    <keywords>phonegap, iad, overlay</keywords>
     <repo>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.ad.iad.overlay</repo>
  	
 	<!-- window.iad.xxx(); -->
