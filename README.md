@@ -1,2 +1,2 @@
 
-# com.cranberrygame.phonegap.plugin.iad.overlay
+# com.cranberrygame.cordova.plugin.ad.iad
