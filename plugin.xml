@@ -27,8 +27,8 @@
 		<header-file src="src/ios/iAd.h" />
 		<source-file src="src/ios/iAd.m" />
 		
-		<framework src="AdSupport.framework" />
 		<framework src="iAd.framework" />
+		<framework src="AdSupport.framework" />
 	</platform>
 
 </plugin>
