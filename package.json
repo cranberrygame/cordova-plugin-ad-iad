@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-ad-iad",
+  "version": "1.0.22",
+  "description": "iAd",
+  "cordova": {
+    "id": "cordova-plugin-ad-iad",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cranberrygame/cordova-plugin-ad-iad.git"
+  },
+  "keywords": [
+    "cordova",
+    "iad",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "cranberrygame",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cranberrygame/cordova-plugin-ad-iad/issues"
+  },
+  "homepage": "https://github.com/cranberrygame/cordova-plugin-ad-iad#readme"
+}

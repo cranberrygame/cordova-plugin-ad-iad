@@ -1,0 +1,44 @@
+<html>
+<head>
+	<script type="text/javascript" src="cordova.js"></script>
+</head>
+<body>
+
+<script>
+
+document.addEventListener("deviceready", function(){
+
+	window.iad.setUp();
+		
+	//
+	window.iad.onBannerAdPreloaded = function() {
+		alert('onBannerAdPreloaded');
+	};
+	window.iad.onBannerAdLoaded = function() {
+		alert('onBannerAdLoaded');
+	};
+	window.iad.onBannerAdShown = function() {
+		alert('onBannerAdShown');
+	};
+	window.iad.onBannerAdHidden = function() {
+		alert('onBannerAdHidden');
+	};	
+}, false);
+	
+/*
+position: 'top-left', 'top-center', 'top-right', 'left', 'center', 'right', 'bottom-left', 'bottom-center', 'bottom-right'
+*/
+</script>
+
+<p><button onclick="window.iad.preloadBannerAd();">preloadBannerAd</button></p>
+<p><button onclick="window.iad.showBannerAd('top-center');">showBannerAd top-center</button></p>
+<p><button onclick="window.iad.showBannerAd('bottom-center');">showBannerAd bottom-center</button></p>
+<p><button onclick="window.iad.reloadBannerAd();">reloadBannerAd</button></p>
+<p><button onclick="window.iad.hideBannerAd();">hideBannerAd</button></p>
+<br>
+<p><button onclick="alert(window.iad.loadedBannerAd());">loadedBannerAd</button></p>
+<br>
+<p><button onclick="alert(window.iad.isShowingBannerAd());">isShowingBannerAd</button></p>
+
+</body>
+</html>

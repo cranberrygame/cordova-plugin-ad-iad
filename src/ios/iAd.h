@@ -1,11 +1,7 @@
-// Copyright (c) 2014 cranberrygame
-// Email: cranberrygame@yahoo.com
-// Phonegap plugin: http://www.github.com/cranberrygame
-// Construct2 phonegap plugin: https://www.scirra.com/forum/viewtopic.php?f=153&t=109586
-//                             https://dl.dropboxusercontent.com/u/186681453/index.html
-//                             https://www.scirra.com/users/cranberrygame
-// Facebook: https://www.facebook.com/profile.php?id=100006204729846
-// License: MIT (http://opensource.org/licenses/MIT)
+//Copyright (c) 2014 Sang Ki Kwon (Cranberrygame)
+//Email: cranberrygame@yahoo.com
+//Homepage: http://cranberrygame.github.io
+//License: MIT (http://opensource.org/licenses/MIT)
 #import <Foundation/Foundation.h>
 #import <Cordova/CDV.h>
 //
@@ -13,12 +9,23 @@
 
 @interface iAd : CDVPlugin <ADBannerViewDelegate>
 
+@property NSString *callbackIdKeepCallback;
+//
+@property NSString *email;
+@property NSString *licenseKey_;
+@property BOOL validLicenseKey;
+//
+@property NSString *bannerPreviousPosition;
+//
+@property BOOL bannerAdPreload;
+//
 @property ADBannerView *bannerView;
-@property NSString *position;
 
-- (void)preloadBannerAd: (CDVInvokedUrlCommand*)command;
-- (void)showBannerAd: (CDVInvokedUrlCommand*)command;
-- (void)hideBannerAd: (CDVInvokedUrlCommand*)command;
-- (void)refreshBannerAd: (CDVInvokedUrlCommand*)command;
+- (void) setLicenseKey: (CDVInvokedUrlCommand*)command;
+- (void) setUp:(CDVInvokedUrlCommand*)command;
+- (void) preloadBannerAd: (CDVInvokedUrlCommand*)command;
+- (void) showBannerAd: (CDVInvokedUrlCommand*)command;
+- (void) reloadBannerAd: (CDVInvokedUrlCommand*)command;
+- (void) hideBannerAd: (CDVInvokedUrlCommand*)command;
 
 @end
