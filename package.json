@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-ad-iad",
-  "version": "1.0.22",
-  "description": "iAd",
+  "version": "1.0.24",
+  "description": "Show iad banner ad",
   "cordova": {
     "id": "cordova-plugin-ad-iad",
     "platforms": [

@@ -4,13 +4,13 @@ Cordova iAd plugin
 # Overview #
 Show iad banner ad
 
-[ios] [crodova cli] [xdk] [cocoon]
+[ios] [crodova cli] [xdk] [cocoon] [phonegap build service]
 
 Requires apple developer account https://developer.apple.com/devcenter/ios/index.action
 
 This is open source cordova plugin.
 
-You can see Plugins For Cordova in one page: http://cranberrygame.github.io?referrer=github
+You can see Cordova Plugins in one page: http://cranberrygame.github.io?referrer=github
 
 # Change log #
 ```c
@@ -18,17 +18,17 @@ You can see Plugins For Cordova in one page: http://cranberrygame.github.io?refe
 # Install plugin #
 
 ## Cordova cli ##
-https://cordova.apache.org/docs/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface - npm install -g cordova@5.0.0
+https://cordova.apache.org/docs/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface - npm install -g cordova@6.0.0
 ```c
 cordova plugin add cordova-plugin-ad-iad
+(when build error, use github url: cordova plugin add cordova plugin add https://github.com/cranberrygame/cordova-plugin-ad-iad)
 ```
 
 ## Xdk ##
-https://software.intel.com/en-us/intel-xdk - Download XDK - XDK PORJECTS - [specific project] - CORDOVA 3.X HYBRID MOBILE APP SETTINGS - PLUGINS - Third Party Plugins - Add a Third Party Plugin - Get Plugin from the Web -
+https://software.intel.com/en-us/intel-xdk - Download XDK - XDK PORJECTS - [specific project] - CORDOVA HYBRID MOBILE APP SETTINGS - Plugin Management - Add Plugins to this Project - Third Party Plugins -
 ```c
-Name: iad
-Plugin ID: com.cranberrygame.cordova.plugin.ad.iad
-[v] Plugin is located in the Apache Cordova Plugins Registry
+Plugin Source: Cordova plugin registry
+Plugin ID: cordova-plugin-ad-iad
 ```
 
 ## Cocoon ##
@@ -42,9 +42,11 @@ https://build.phonegap.com/ - Apps - [specific project] - Update code - Zip file
 ```
 
 ## Construct2 ##
-Download construct2 plugin: https://dl.dropboxusercontent.com/u/186681453/pluginsforcordova/index.html
-<br>
-Now all the native plugins are installed automatically: https://plus.google.com/102658703990850475314/posts/XS5jjEApJYV<br>
+Download construct2 plugin<br>
+https://dl.dropboxusercontent.com/u/186681453/pluginsforcordova/index.html<br>
+How to install c2 native plugins in xdk, cocoon and cordova cli<br>
+https://plus.google.com/102658703990850475314/posts/XS5jjEApJYV
+
 # Server setting #
 ```c
 ```
@@ -91,7 +93,7 @@ alert(window.iad.isShowingBannerAd());//boolean: true or false
 
 # Useful links #
 
-Plugins For Cordova<br>
+Cordova Plugins<br>
 http://cranberrygame.github.io?referrer=github
 
 # Credits #
